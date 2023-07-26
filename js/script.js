@@ -26,7 +26,7 @@ const createGestureRecognizer = async () => {
     gestureRecognizer = await GestureRecognizer.createFromOptions(vision, {
         baseOptions: {
             modelAssetPath:
-            "../models/naruto.task", // ローカルのファイルパスに変更
+            "./models/naruto.task", // ローカルのファイルパスに変更
             delegate: "GPU"
         },
         runningMode: runningMode,
